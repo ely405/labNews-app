@@ -6,75 +6,9 @@
     flex-direction: $direction;
 }
 
-    /*img-responsive {
-    height: 100%;
-}*/
-
-//sectioon top news
-.top {
-    & .top__content {
-            /*height: 40rem;*/
-        &.flex {
-            @include flex(column);
-            div {
-                background-color: black;
-                color: white;
-            }
-            @media (max-width: 767px) {
-                @include flex(row);
-            }
-        }
-        &.main-new .content {
-            left: 3rem;
-            bottom: 3rem;
-            background-color: transparent;
-            position: absolute;
-        }
-        &.top-2 {
-            @include flex(column);
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .top {
-        & .top__content--short {
-            height: 20rem;
-        }
-    }
-}
-
-//section wolrd news
-.first-row-world {
-    height: 40rem;
-    & .first-row-world__col {
-        height: 100%;
-        & .col-rigth-content,
-        & .col-left-content {
-            height: 100%;
-        }
-        & .col-mid-content-50 {
-            height: 50%;
-        }
-        @media (max-width: 767px) {
-            & .col-mid-content-50 {
-                height: 33%;
-            }
-        }
-        & .col-mid-content-25 {
-            height: 25%;
-        }
-    }
-}
-
-.sec-row-world {
-    height: 10rem;
-    & .sec-row-world__content {
-        height: 100%;
-    }
-}
 
 //section tech
+/*
 .tech-col {
     height: 40rem;
     & .tech-col__left {
@@ -87,8 +21,10 @@
         height: 25%;
     }
 }
+*/
 
 //section education
+/*
 .first-row-ed {
     height: 25rem;
     & .first-row-ed__content {
@@ -100,8 +36,10 @@
         }
     }
 }
+*/
 
 //opinion section
+/*
 .opinion-row {
     height: 30rem;
     & .opinion-row__content {
@@ -113,11 +51,17 @@
         }
     }
 }
+*/
 
 .p-0{
     padding: 0;
 }
-
+.p-t-15{
+    padding-top: 1.5rem;
+}
+.p-l-0{
+    padding-left: 0;
+}
 .ov-hidden{
     overflow: hidden;
 }
@@ -177,16 +121,20 @@
         }
         &.world-news--content-sm{
             height: 45rem;
+            padding: 1.5rem 0 0;
         }
         &.world-news--cont-middle-up, &.world-news--cont-middle-down{
             height: 15rem;
+        }
+        &.world-news--cont-row-down{
+            height: 20rem;
         }
     }
     @media (max-width: 767px){
         &.world-news--cont-middle-down, &.world-news--cont-middle-up{
             @include flex(row);
             height: 8rem;
-            padding: 0;
+            padding: 1.5rem 0 0;
         }
         & img{
             height: 100%;

@@ -8,9 +8,7 @@ const render = (root) => {
     wrapper.append(sectioneducationNews(_ => {render(root)}));
     wrapper.append(sectionopinionNews(_ => {render(root)}));
     */
-    
-    
-    
+        
     
     
     root.append(wrapper);
