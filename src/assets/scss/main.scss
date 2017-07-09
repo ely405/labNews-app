@@ -161,6 +161,10 @@
         background-color: $secondary-color;
         color: white;
     }
+    &.content--litle{
+            height: 10rem;
+            overflow: hidden;
+    }
     @media (min-width: 767px){
         & .second-news__contain-img{
             height: 70%;
@@ -171,6 +175,22 @@
         &.content--sm{
             height: 20rem;
         }
+        &.world-news--content-sm{
+            height: 45rem;
+        }
+        &.world-news--cont-middle-up, &.world-news--cont-middle-down{
+            height: 15rem;
+        }
+    }
+    @media (max-width: 767px){
+        &.world-news--cont-middle-down, &.world-news--cont-middle-up{
+            @include flex(row);
+            height: 8rem;
+            padding: 0;
+        }
+        & img{
+            height: 100%;
+        }
     }
     &.flex-row{
         @include flex(row);
@@ -180,11 +200,5 @@
     }
     &.flex-col{
         @include flex(column);
-    }
-    &.content--litle{
-        @media (max-width: 767px){
-            height: 10rem;
-            overflow: hidden;
-        }
     }
 }

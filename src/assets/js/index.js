@@ -3,10 +3,12 @@
 const render = (root) => {
     const wrapper = $('<div class="wrapper"></div>');
     wrapper.append(sectionTopNews(_ => {render(root)}));
-    /*wrapper.append(sectionWorldNews(_ => {render(root)}));
-    wrapper.append(sectionTechNews(_ => {render(root)}));
+    wrapper.append(sectionWorldNews(_ => {render(root)}));
+    /*wrapper.append(sectionTechNews(_ => {render(root)}));
     wrapper.append(sectioneducationNews(_ => {render(root)}));
-    wrapper.append(sectionopinionNews(_ => {render(root)}));*/
+    wrapper.append(sectionopinionNews(_ => {render(root)}));
+    */
+    
     
     
     

@@ -1,6 +1,5 @@
 'use strict';
 
-
 const sectionTopNews = (update) => {
     let topNews = $('<section class="container-fluid top"></section>');
     let mainrow = $('<section class="row"></div>');
