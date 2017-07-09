@@ -6,53 +6,6 @@
     flex-direction: $direction;
 }
 
-
-//section tech
-/*
-.tech-col {
-    height: 40rem;
-    & .tech-col__left {
-        height: 100%;
-    }
-    & .tech-col__right--50 {
-        height: 50%;
-    }
-    & .tech-col__right--25 {
-        height: 25%;
-    }
-}
-*/
-
-//section education
-/*
-.first-row-ed {
-    height: 25rem;
-    & .first-row-ed__content {
-        height: 100%;
-        @media (max-width: 767px) {
-            &.h-50-xs {
-                height: 50%;
-            }
-        }
-    }
-}
-*/
-
-//opinion section
-/*
-.opinion-row {
-    height: 30rem;
-    & .opinion-row__content {
-        height: 100%;
-        @media (max-width: 767px) {
-            &.h-50-xs {
-                height: 50%;
-            }
-        }
-    }
-}
-*/
-
 .p-0{
     padding: 0;
 }
@@ -109,30 +62,52 @@
             height: 10rem;
             overflow: hidden;
     }
+    & .second-news__contain-img{
+        &.in-flex-sm{
+            height: 100%;
+        }
+    }
+    & .content{
+        &.in-flex-xs{
+            height: 100%;
+        }
+    }
+    
+    &.world-news--cont-row-down{
+        height: 15rem;
+        & .content{
+            height: 30%;
+        }
+    }
     @media (min-width: 767px){
         & .second-news__contain-img{
             height: 70%;
+            &.in-flex-sm-col{
+                height: 70%;
+            }
         }
         & .content{
-            height: 30%;
+            &.in-flex-sm{
+                height: 30%;
+            }
         }
         &.content--sm{
             height: 20rem;
         }
         &.world-news--content-sm{
-            height: 45rem;
+            height: 39rem;
             padding: 1.5rem 0 0;
         }
-        &.world-news--cont-middle-up, &.world-news--cont-middle-down{
+        &.world-news--cont-middle-up{
             height: 15rem;
         }
-        &.world-news--cont-row-down{
-            height: 20rem;
+        &.world-news--cont-middle-down{
+            @include flex(row);
+            height: 12rem;
         }
     }
     @media (max-width: 767px){
         &.world-news--cont-middle-down, &.world-news--cont-middle-up{
-            @include flex(row);
             height: 8rem;
             padding: 1.5rem 0 0;
         }

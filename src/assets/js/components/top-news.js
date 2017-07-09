@@ -21,11 +21,11 @@ const sectionTopNews = (update) => {
         item1.addClass('main-news col-xs-12 col-sm-12');
         row1.append(item1);
         let item2 = content(topNew[1].title, topNew[1].brief, 'assets/img/' + topNew[1].url, 'second-news__contain-img', 'col-xs-12');
-        item2.addClass('col-xs-12 col-sm-6 second-news flex-col content--sm');
+        item2.addClass('col-xs-12 col-sm-6 second-news flex-col content--sm p-t-15');
         let item3 = content(topNew[2].title, topNew[2].brief, 'assets/img/' + topNew[2].url, 'col-xs-6 col-sm-12 p-0 second-news__contain-img', 'col-xs-6 col-sm-12');
-        item3.addClass('col-xs-12 col-sm-3 second-news flex-row content--litle content--sm');
+        item3.addClass('col-xs-12 col-sm-3 second-news flex-row content--litle content--sm p-t-15');
         let item4 = content(topNew[3].title, topNew[3].brief, 'assets/img/' + topNew[3].url, 'col-xs-6 col-sm-12 p-0 second-news__contain-img', 'col-xs-6 col-sm-12');
-        item4.addClass('col-xs-12 col-sm-3 second-news flex-row content--litle content--sm');
+        item4.addClass('col-xs-12 col-sm-3 second-news flex-row content--litle content--sm p-t-15');
         row2.append(item2, item3, item4);
         mainrow.append(row1, row2);
     });
