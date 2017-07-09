@@ -63,6 +63,7 @@
             overflow: hidden;
     }
     & .second-news__contain-img{
+        padding: 0;
         &.in-flex-sm{
             height: 100%;
         }
@@ -87,9 +88,10 @@
             }
         }
         & .content{
-            &.in-flex-sm{
+            height: 30%;
+            /*&.in-flex-sm{
                 height: 30%;
-            }
+            }*/
         }
         &.content--sm{
             height: 20rem;
